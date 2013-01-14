@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Department of Sociology & Criminal Justice</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+	<style>
+		.ui-page { -webkit-backface-visibility: hidden;
+			background:transparent;
+		}
+		.backgroundPic {
+			width: 100%;
+			height:100%;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+<div data-role="page" data-transition="slide">
+	<div data-role="header" data-position="fixed" data-theme="a">
+		<a href="departments.html" data-icon="back" data-theme="e" class="ui-btn-left" data-transition="flip">Back</a>
+		<h1 style="color:#C90;">CHSS</h1><p><h3 style="color:#FFF;"><marquee>Department of Sociology & Criminal Justice</marquee></h3></p>
+		<a href="index.html" data-icon="home" data-theme="e" class="ui-btn-right" data-transition="flip">Home</a>
+	</div><!--/header-->
+	<div data-role="content">
+		<div data-role="collapsible" data-theme="e" data-content-theme="e">
+			<h3>Majors</h3>
+			<ul data-role="listview" data-inset="true" data-theme="e">
+					<li><a href="bscriminaljustice.html" data-transition="flip">B.S. in Criminal Justice</a></li>
+					<li><a href="bssociology.html" data-transition="flip">B.S. in Sociology</a></li>
+
+			</ul>
+		</div>
+		<div data-role="collapsible" data-theme="e" data-content-theme="e">
+			<h3>Minors</h3>
+			<ul data-role="listview" data-inset="true" data-theme="e">
+					<li><a href="mncriminaljustice.html" data-transition="flip">Criminal Justice</a></li>
+					<li><a href="mncriminology.html" data-transition="flip">Criminology</a></li>
+					<li><a href="mngerontology.html" data-transition="flip">Gerontology</a></li>
+					<li><a href="mnsociology.html" data-transition="flip">Sociology</a></li>
+			</ul>
+		</div>
+		
+		<img src="images/background.png" class="backgroundPic"/>
+	</div><!--/content-->
+	<div data-role="footer" data-position="fixed" style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" >
+		<a href="http://scj.hss.kennesaw.edu/" target="foo" data-theme="e" rel="external" data-role="button" data-inline="true" data-transition="flip">More info on web</a>
+	</div><!--footer-->	
+</div><!--/page-->
+</body>
+
+</html>

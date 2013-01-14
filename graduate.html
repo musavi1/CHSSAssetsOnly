@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graduate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+	<style>
+		.ui-page { -webkit-backface-visibility: hidden;
+			background:transparent;
+		}
+		.backgroundPic {
+			width: 100%;
+			height:100%;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+<div data-role="page">
+	<div data-role="header" data-theme="a" data-position="fixed">
+		<a href="index.html" data-icon="back" data-theme="e" class="ui-btn-left" data-transition="slide">Back</a>
+		<h1 style="color:#C90;">CHSS</h1><p><h3 style="color:#FFF;">Graduate</h3></p>
+		<a href="index.html" data-icon="home" data-theme="e" class="ui-btn-right" data-transition="slide">Home</a>
+	</div><!--/header-->
+	<div data-role="content">
+		
+		<ul data-role="listview" data-inset="true" data-filter="false" data-theme="g">
+			<li><a href="phd.html" data-transition="pop">PhD<span class="ui-li-count">2</span></a></li>
+			<li><a href="mastersdegrees.html">Master's Degrees<span class="ui-li-count">9</span></a></li>
+			<li><a href="centers.html">Centers<span class="ui-li-count">7</span></a></li>
+			<li><a href="gradcertificates.html">Certificates<span class="ui-li-count">2</span></a></li>
+			<li><a href="writingcenter.html">Writing Center</a></li>
+		</ul>
+		<img src="images/background.png" class="backgroundPic"/>
+	</div><!--/content-->
+</div><!--/page-->
+</body>
+</html>

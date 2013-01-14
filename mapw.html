@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>info</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+	<style>
+		.ui-page { -webkit-backface-visibility: hidden;
+			background:transparent;
+		}
+		.backgroundPic {
+			width: 100%;
+			height:100%;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+			position: absolute;
+		}
+		
+		#footerWrap{
+			text-align:center;
+		}
+		
+	</style>
+</head>
+
+<body>
+<div data-role="page" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<a href="mastersdegrees.html" data-rel="back" data-icon="back" data-theme="e" class="ui-btn-left" data-transition="flip">Back</a>
+		<h1 style="color:#C90;">CHSS</h1><h3 style="color:#FFF;">Professional Writing</h3></p>
+		<a href="index.html" data-icon="home" data-theme="e" class="ui-btn-right" data-transition="flip">Home</a>
+	</div><!--/header-->
+	<div data-role="content">
+		<div class="ui-body ui-body-e" style="border-radius:5%;">
+			<p>
+			The Master of Arts in Professional Writing (MAPW) degree is a professional graduate degree program that prepares
+			candidates for a wide variety of writing-related positions in business, education, publishing, and the arts.
+			Coursework in three concentrations - applied writing, composition and rhetoric, and creative writing - allows 
+			students to gain theoretical and practical knowledge in various fields of professional writing.
+			</p>
+		</div><!--collapsible-->
+		<img src="images/background.png" class="backgroundPic"/>
+	</div><!--/content-->
+	<div data-role="footer" data-position="fixed" style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" >
+		<a href="http://www.ksu-mapw.com/" target="foo" data-theme="e" rel="external" data-role="button" data-inline="true" data-transition="flip">More info on web</a>
+	</div><!--footer-->
+</div><!--/page-->
+</body>
+
+</html>

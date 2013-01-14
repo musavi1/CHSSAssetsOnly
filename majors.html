@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Majors</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+	<style>
+		.ui-page { -webkit-backface-visibility: hidden;
+			background:transparent;
+		}
+		.backgroundPic {
+			width: 100%;
+			height:100%;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+<div data-role="page">
+	<div data-role="header" data-position="fixed" data-theme="a">
+		<a href="undergraduate.html" data-icon="back" class="ui-btn-left" data-theme="e" data-transition="flip">Back</a>
+		<h1 style="color:#C90;">CHSS</h1><p><h3 style="color:#FFF;">Majors</h3></p>
+		<a href="index.html" data-icon="home" class="ui-btn-right" data-theme="e" data-transition="flip">Home</a>
+	</div><!--/header-->
+	<div data-role="content">
+		
+		<ul data-role="listview" data-inset="true" data-filter="false" data-theme="e">
+			<li><a href="bscommunication.html" data-transition="flip">B.S. in Communication</a></li>
+			<li><a href="baenglish.html" data-transition="turn">B.A. in English</a></li>
+			<li><a href="bsenglisheducation.html" data-transition="flow">B.S. in English Education</a></li>
+			<li><a href="bamodernlanguage.html" data-transition="slidefade">B.A. in Modern Language & Culture</a></li>
+			<li><a href="bageography.html" data-transition="slide">B.A. in Geography</a></li>
+			<li><a href="bsanthropology.html" data-transition="slideup">B.S. in Anthropology</a></li>
+			<li><a href="bsgis.html" data-transition="slidedown">B.S. in Geographic Information Science</a></li>
+			<li><a href="bsintegrativestudies.html" data-transition="pop">B.S. in Integrative Studies</a></li>
+			<li><a href="bahistory.html" data-transition="pop">B.A. in History</a></li>
+			<li><a href="baphilosophy.html" data-transition="pop">B.A. in Philosophy</a></li>
+			<li><a href="bshistoryeducation.html" data-transition="pop">B.S. in History Education</a></li>
+			<li><a href="baafricandiaspora.html" data-transition="pop">B.A. in African and African Diaspora Studies</a></li>
+			<li><a href="bainternationalaffairs.html" data-transition="pop">B.A. in International Affairs</a></li>
+			<li><a href="bspoliticalscience.html" data-transition="pop">B.S. in Political Science</a></li>
+			<li><a href="bspsychology.html" data-transition="pop">B.S. in Psychology</a></li>
+			<li><a href="bscriminaljustice.html" data-transition="pop">B.S. in Criminal Justice</a></li>
+			<li><a href="bssociology.html" data-transition="pop">B.S. in Sociology</a></li>
+		</ul>
+		<img src="images/background.png" class="backgroundPic"/>
+	</div><!--/content-->
+		
+</div><!--/page-->
+</body>
+</html>

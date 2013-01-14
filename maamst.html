@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>info</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+	<style>
+		.ui-page { -webkit-backface-visibility: hidden;
+			background:transparent;
+		}
+		.backgroundPic {
+			width: 100%;
+			height:100%;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+			position: absolute;
+		}
+		
+		#footerWrap{
+			text-align:center;
+		}
+		
+	</style>
+</head>
+
+<body>
+<div data-role="page" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<a href="mastersdegrees.html" data-rel="back" data-icon="back" data-theme="e" class="ui-btn-left" data-transition="flip">Back</a>
+		<h1 style="color:#C90;">CHSS</h1><h3 style="color:#FFF;">American Studies</h3></p>
+		<a href="index.html" data-icon="home" data-theme="e" class="ui-btn-right" data-transition="flip">Home</a>
+	</div><!--/header-->
+	<div data-role="content">
+		<div class="ui-body ui-body-e" style="border-radius:5%;">
+			<p>
+			KSU's master's program in American Studies offers interdisciplinary study of American cultures as they exist locally,
+			regionally, nationally, and trans-nationally. The sole American Studies graduate curriculum in the University System 
+			of Georgia, KSU's new course of study will ground students in the most important and innovative recent scholarship 
+			dealing with the United States and its role in the world. Students will also have the opportunity to engage in practical,
+			project-based learning linked to their own professional development needs and interests. Thus, students will not only
+			learn cutting-edge approaches to the study of American history, politics, literature, arts, and culture, but they will
+			also apply this knowledge through group work, collaborations with faculty, community service, and career-related 
+			capstone projects.
+			</p>
+		</div><!--collapsible-->
+		<img src="images/background.png" class="backgroundPic"/>
+	</div><!--/content-->
+	<div data-role="footer" data-position="fixed" style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" >
+		<a href="http://amst.hss.kennesaw.edu/programs/maamst/" target="foo" data-theme="e" rel="external" data-role="button" data-inline="true" data-transition="flip">More info on web</a>
+	</div><!--footer-->
+</div><!--/page-->
+</body>
+
+</html>

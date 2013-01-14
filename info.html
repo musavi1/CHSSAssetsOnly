@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>info</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+	<style>
+		.ui-page { -webkit-backface-visibility: hidden;
+			background:transparent;
+		}
+		.backgroundPic {
+			width: 100%; height:100%; top: 0px; left: 0px; z-index: -1; position: absolute;
+		}
+		
+		#footerWrap{
+			text-align:center;
+		}
+		
+	</style>
+</head>
+
+<body>
+<div data-role="page" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="back" data-theme="e" class="ui-btn-left" data-transition="flip">Back</a>
+		<h1 style="color:#C90;">CHSS</h1><h3 style="color:#FFF;">Subtitle</h3></p>
+		<a href="index.html" data-icon="home" data-theme="e" class="ui-btn-right" data-transition="flip">Home</a>
+	</div><!--/header-->
+	<div data-role="content">
+		<div class="ui-body ui-body-e" style="border-radius:5%;">
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque porta blandit. 
+			Praesent quis quam lorem, eu tincidunt urna. Proin ac orci at magna facilisis accumsan eget in lacus. 
+			Aliquam non lacus mollis felis commodo interdum. 
+			Suspendisse potenti. In dictum molestie elit, in lobortis lectus blandit nec. In in massa eros, eget mattis diam.
+			Cras pharetra tempus lectus et sodales. Nulla vehicula arcu at quam bibendum eu volutpat justo tincidunt. 
+			Aliquam diam leo, ultricies at aliquet tincidunt, sagittis vel ipsum. Cras cursus molestie est at egestas.
+			Nam aliquet, sem sed laoreet porta, magna risus vestibulum lacus, fermentum venenatis dui turpis vitae dolor. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis neque ultrices neque placerat dignissim. 
+			Sed commodo tincidunt tempus. Extra data!!!
+			</p>
+		</div><!--collapsible-->
+		<img src="images/background.png" class="backgroundPic"/>
+	</div><!--/content-->
+	<div data-role="footer" data-position="fixed" style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" >
+		<a href="http://www.kennesaw.edu" target="foo" data-theme="e" rel="external" data-role="button" data-inline="true" data-transition="flip">More info on web</a>
+	</div><!--footer-->
+</div><!--/page-->
+</body>
+
+</html>

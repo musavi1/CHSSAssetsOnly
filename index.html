@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+	<style>
+		.backgroundPic {
+			width: 100%; height:100%; top: 0px; left: 0px; z-index: -1; position: absolute;
+		}
+		.ui-page {
+			-webkit-backface-visibility: hidden; background:transparent;
+		}
+		a{ text-decoration:none;}
+	</style>
+</head>
+
+<body>
+<div data-role="page">
+	
+	<div data-role="content">
+		<div style="width:49%;float:left;padding-top:5%;text-align:center;font-weight:bold;font-family: Arial;font-size:80%;">
+			<a href="undergraduate.html" data-transition="flip"><img style="width:30%;" src="images/icon_undergraduate_medium.png"/></a><br />Undergraduate
+		</div>
+		<div style="width:49%;float:left;padding-top:5%;text-align:center;font-weight:bold;font-family: Arial;font-size:80%;">
+			<a href="graduate.html" data-transition="flip"><img style="width:30%;" src="images/icon_graduate_medium.png"/></a><br />Graduate
+		</div>
+		<div style="width:49%;float:left;padding-top:6%;text-align:center;font-weight:bold;font-family: Arial;font-size:80%;">
+			<a href="newsandevents.html"><img style="width:30%;" src="images/icon_news_medium.png"/></a><br />News & Events
+		</div>
+		<div style="width:49%;float:left;padding-top:6%;text-align:center;font-weight:bold;font-family: Arial;font-size:80%;">
+			<a href="maps.html" data-transition="flip"><img style="width:30%;" src="images/icon_directions_medium.png"/></a><br />Maps
+		</div>
+		<div style="width:49%;float:left;padding-top:6%;text-align:center;font-weight:bold;font-family: Arial;font-size:80%;">
+			<a href="d2l.html" data-transition="flip"><img style="width:30%;" src="images/icon_d2l_medium.png"/></a><br />D2L
+		</div>
+		<div style="width:49%;float:left;padding-top:6%;text-align:center;font-weight:bold;font-family: Arial;font-size:80%;">
+			<a href="resources.html" data-transition="flip"><img style="width:30%;" src="images/icon_resources_medium.png"/></a><br />Resources
+		</div>
+	</div><!--/content-->
+	<img src="images/hss_main_bg.png" class="backgroundPic"/>
+</div><!--/page-->
+	
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Departments</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+	<style>
+		.ui-page { -webkit-backface-visibility: hidden;
+			background:transparent;
+		}
+		.backgroundPic {
+			width: 100%;
+			height:100%;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+<div data-role="page">
+	<div data-role="header" data-theme="a" data-position="fixed">
+		<a href="undergraduate.html" data-icon="back" class="ui-btn-left" data-theme="e" data-transition="flip">Back</a>
+		<h1 style="color:#C90;">CHSS</h1><p><h3 style="color:#FFF;">Departments</h3></p>
+		<a href="index.html" data-icon="home" class="ui-btn-right" data-theme="e" data-transition="flip">Home</a>
+	</div><!--/header-->
+	<div data-role="content">
+		
+		<ul data-role="listview" data-inset="true" data-filter="false" data-theme="e">
+			<li><a href="dptcommunication.html" data-transition="flip">Communication</a></li>
+			<li><a href="dptenglish.html" data-transition="flip">English</a></li>
+			<li><a href="dptforeignlanguage.html" data-transition="flip">Foreign Languages</a></li>
+			<li><a href="dptanthropology.html" data-transition="flip">Geography & Anthropology</a></li>
+			<li><a href="dpthistandphil.html" data-transition="flip">History & Philosophy</a></li>
+			<li><a href="dptinterdisciplinary.html" data-transition="flip">Interdisciplinary Studies</a></li>
+			<li><a href="dptpoliticalscienceandinter.html" data-transition="flip">Political Science & International Affairs</a></li>
+			<li><a href="dptpsychology.html" data-transition="flip">Psychology</a></li>
+			<li><a href="dptsociologyandcriminal.html" data-transition="flip">Sociology & Criminal Justice</a></li>
+		</ul>
+		<img src="images/background.png" class="backgroundPic"/>
+	</div><!--/content-->
+	
+</div><!--/page-->
+</body>
+</html>

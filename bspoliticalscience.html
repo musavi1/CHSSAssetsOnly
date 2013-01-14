@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>B.S. in Political Science</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+	<style>
+		.ui-page { -webkit-backface-visibility: hidden;
+			background:transparent;
+		}
+		.backgroundPic {
+			width: 100%;
+			height:100%;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+			position: absolute;
+		}
+		
+		#footerWrap{
+			text-align:center;
+		}
+		
+	</style>
+</head>
+
+<body>
+<div data-role="page">
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="back" data-theme="e" class="ui-btn-left" data-transition="flip">Back</a>
+		<h1 style="color:#C90;">CHSS</h1><p><h3 style="color:#FFF;">B.S. in Political Science</h3></p>
+		<a href="index.html" data-icon="home" data-theme="e" class="ui-btn-right" data-transition="flip">Home</a>
+	</div><!--/header-->
+	<div data-role="content">
+		<div class="ui-body ui-body-e" style="border-radius:5%;">
+			<p>
+			The Bachelor of Science in Political Science is the study of the formal institutions of government and the actual
+			behavior of people in public life.
+			</p>
+		</div><!--collapsible-->
+		<img src="images/background.png" class="backgroundPic"/>
+	</div><!--/content-->
+	<div data-role="footer" data-position="fixed" style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" >
+		<a href="http://catalog.kennesaw.edu/preview_program.php?catoid=12&poid=867&returnto=552" target="foo" data-theme="e" rel="external" data-role="button" data-inline="true" data-transition="flip">More info on web</a>
+	</div><!--footer-->
+</div><!--/page-->
+</body>
+
+</html>

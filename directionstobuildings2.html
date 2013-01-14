@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Building Directions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         
+            <link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+            <script src="js/jquery.js"></script>
+            <script src="js/jquery.mobile.js"></script>
+            <style>
+                .ui-page { -webkit-backface-visibility: hidden;
+                    background:transparent;
+                }
+                .backgroundPic {
+                    width: 100%;
+                    height:100%;
+                    top: 0px;
+                    left: 0px;
+                    z-index: -1;
+                    position: absolute;
+                }
+                </style>
+
+            </head>
+		<body>
+					
+        <div data-role="page">
+            <div data-role="header" data-theme="a" data-position="fixed">
+                <a href="maps.html" data-icon="back" data-theme="e" class="ui-btn-left" data-transition="flip">Back</a>
+                <h1 style="color:#C90;">CHSS</h1><p><h3 style="color:#FFF;">Directions to Buildings</h3></p>
+                <a href="index.html" data-icon="home" data-theme="e" class="ui-btn-right" data-transition="flip">Home</a>
+            </div>
+			<div data-role="content">
+				<h1>Select A Building</h1>
+				<fieldset data-role="fieldcontain"> 
+					<select id="myList" name="myList">
+						<option value = "SSC" selected="selected">Social Sciences Building</option>
+						<option value = "BB">Burruss Building</option>
+						<option value = "EB">English Building</option>
+						<option value = "CB">Clendenin Building</option>
+					</select>
+					<input type="button" id="searchButton" name="searchButton" value="search" onclick="selectBuilding();"/>
+				</fieldset>
+				<img src="images/background.png" class="backgroundPic"/>
+			</div><!--/content-->
+			<script type="text/javascript">
+               // $(document).ready(function() {
+				//	$('#searchButton').click(function() {
+					//	goToMap();
+					//});
+					//function goToMap() {	
+						//var buildingLocation = "https://maps.google.com/maps?client=safari&q=google+maps+kennesaw+state&oe=UTF-8&ie=UTF-8&ei=lpuuUKKgLYe2qAGywYCQCw&ved=0CAgQ_AUoAA";
+						//window.location = buildingLocation;
+					//}
+				//});
+				//});
+				function selectBuilding(){
+					var buildingLocation = "";
+					if(document.getElementById("myList").value=="SSC"){
+						buildingLocation="https://maps.google.com/maps?q=34.038862,-84.58556&num=1&t=m&z=18";
+						window.location = buildingLocation;
+					}
+					else if(document.getElementById("myList").value == "BB"){
+						buildingLocation="https://maps.google.com/maps?q=34.039498,-84.581815&num=1&t=m&z=18";
+						window.location= buildingLocation;
+					}
+					else if(document.getElementById("myList").value == "EB"){
+						buildingLocation="https://maps.google.com/maps?q=34.039209,-84.5841&num=1&t=m&z=18";
+						window.location=buildingLocation;
+					}
+					else if(document.getElementById("myList").value == "CB"){
+						buildingLocation="https://maps.google.com/maps?q=34.035955,-84.583564&num=1&t=m&z=18";
+						window.location= buildingLocation;
+					}
+					else{
+						buildingLocation="http://www.yahoo.com";
+						window.location = buildingLocation;
+					}
+				}
+                </script>
+        </div><!--/page-->
+    </body>
+</html>

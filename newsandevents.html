@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News & Events</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+	<style type="text/css" media="screen">
+		.ui-page { -webkit-backface-visibility: hidden;
+			background:transparent;
+		}
+		.backgroundPic {
+			width: 100%; height:100%; top: 0px; left: 0px; z-index: -1; position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div data-role="page" data-theme="e">
+		<div data-role="header" data-theme="a" data-position="fixed">
+			<a href="index.html" data-icon="back" class="ui-btn-left" data-theme="e" data-transition="flip">Back</a>
+			<h1 style="color:#C90;">CHSS</h1><p><h3 style="color:#FFF;">News & Events</h3></p>
+			<a href="index.html" data-icon="home" class="ui-btn-right" data-theme="e" data-transition="flip">Home</a>
+		</div><!--/header-->
+		<div class="boxshadow">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="javascript:;" data-href="a" class="ui-btn-active">News</a></li>
+					<li><a href="javascript:;" data-href="b">Events</a></li>
+				</ul>
+			</div><!-- /navbar -->
+			
+			<div id="a" class="content_div" style="display:block;">
+				<ul data-role="listview" data-theme="d" data-divider-theme="d">
+					<li data-role="list-divider" data-theme="e">Friday, December 8, 2012 <span class="ui-li-count">2</span></li>
+					<li><a href="#">
+							<h3>Donal Trump</h3>
+							<p><strong>Donald Trump arrives at Kennesaw</strong></p>
+							<p>Kennesaw is expecting nearly 1000 students to attend the event organized by the humanities building.</p>
+							<p class="ui-li-aside"><strong>12:00</strong>PM</p>
+					</a></li>
+					<li><a href="#">
+						<h3>MadLab</h3>
+						<p><strong>MadLab leads the way with mobile development</strong></p>
+						<p>The small technology lab located right outside of the KSU campus breaks gound in Mobile Computing ...</p>
+						<p class="ui-li-aside"><strong>9:18</strong>AM</p>
+						
+					</a></li>
+					<li data-role="list-divider" data-theme="e">Thursday, December 20, 2012 <span class="ui-li-count">1</span></li>
+					<li><a href="#">
+						<h3>Christmas</h3>
+						<p><strong>A black and gold Christmas</strong></p>
+						<p>KSU is hosting a big christmas party in the humanities building and invites neighboring colleges and high schools to join in.. </p>
+						<p class="ui-li-aside"><strong>6:00</strong>PM</p>
+					</a></li>
+					<li data-role="list-divider" data-theme="e">Wednesday, January 4, 2013 <span class="ui-li-count">2</span></li>
+					<li><a href="#">
+						<h3>Amazon.com</h3>
+						<p><strong>Cheaper books for students</strong></p>
+						<p>KSU has signed a deal with the web giant to provide all the books on the Kennesaw curriculum at a discount price to every ksu student...</p>
+						<p class="ui-li-aside"><strong>12:47</strong>PM</p>
+					</a></li>
+					<li><a href="#">
+						<h3>Green Campus</h3>
+						<p><strong>College of Humanities educates Kennesaw about Global Warming</strong></p>
+						<p>The college of humanities starts an initiative to turn KSU into one the greenest campuses in the US through education and national outreach </p>
+						<p class="ui-li-aside"><strong>6:24</strong>AM</p>
+					</a></li>
+				</ul>
+			</div>
+			
+			<div id="b" class="content_div" style="display:none;">
+				Content for the events
+			</div>
+		
+		</div><!--BoxShadowDiv-->
+			<script type="text/javascript">
+				$(document).delegate('.ui-navbar ul li> a', 'click', function(){
+					$(this).closest('.ui-navbar').find('a').removeClass('ui-btn-active');
+					$(this).addClass('ui-btn-active');
+					$('#' + $(this).attr('data-href')).show().siblings('.content_div').hide();
+				});
+			</script>
+	
+	</div><!--/page-->	
+</body>
+
+</html>

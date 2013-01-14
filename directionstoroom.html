@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Room Directions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile.js"></script>
+    <script src="Maps.js"></script>        
+		<style>
+			.ui-page { -webkit-backface-visibility: hidden;
+				background:transparent;
+			}
+			.backgroundPic {
+				width: 100%;
+				height:100%;
+				top: 0px;
+				left: 0px;
+				z-index: -1;
+				position: absolute;
+			}
+		</style>
+    </head>
+    <body>
+        <div data-role="page">
+		 
+			<div data-role="header" data-theme="a" data-position="fixed">
+                <a href="Maps.html" data-icon="back" data-theme="e"class="ui-btn-left" data-transition="flip">back</a>
+                <h1 style="color:#C90;">CHSS</h1><p><h3 style="color:#FFF;">Directions to Room</h3></p>
+                <a href="index.html" data-icon="home" data-theme="e" class="ui-btn-right" data-transition="flip">Home</a>
+            </div><!--/header-->
+			<div data-role="content">
+				<h1>Enter Room Number</h1>
+				<ul data-role="listview" data-inset="true" data-filter="false" data-theme="e">
+					<input type="number" placeholder="Enter Room Number" name="roomNumber">
+					<li>
+					<a id="searchButton" data-transition="flip">Search</a>
+					</li>
+				</ul>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						$('#searchButton').click(function() {
+						var roomNumber = $(':input').val();
+							window.location.href = "floormap.html?RoomNum=" +roomNumber;
+						});
+					});
+				</script> 
+				<img src="images/background.png" class="backgroundPic"/>
+			</div><!--/content-->
+        </div><!--/page-->
+    </body>
+</html>
